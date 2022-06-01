@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   count = 0;
-
+  nome = "Augusto Fernandes Costa"
   pessoas =[
     {
       nome: "Augusto",
@@ -33,5 +33,9 @@ export class AppComponent implements OnInit{
         clearInterval(interval);
       }
     }, 1000)   
+  }
+
+   clicou(nome: string): void{
+    console.log('clicou em mim', nome);
   }
 } 
