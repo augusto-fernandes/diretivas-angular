@@ -1,5 +1,6 @@
 <h1 appMarcaTexto corDeFundo="red" corDoTexto="blue" class="text-center">Angular Diretivas</h1>
 
+<!--Diretivas de Atributo-->
 <div
   [ngStyle]="{ background: count < 5 ? 'red' : 'green' }"
   [ngClass]="{ custom: count > 5 }"
@@ -25,7 +26,7 @@
 
 <ul [ngSwitch]="count" class="list-group my-3 mx-auto col-3">
   <li class="list-group-item" *ngFor="let pessoa of pessoas">
-    O nome da pessoa é {{ pessoa.nome }} {{ pessoa.sobrenome }}
+    O nome da pessoa é {{ pessoa.firstName }} {{ pessoa.lastName }} e ela tem {{pessoa.age}}
   </li>
 </ul>
 
