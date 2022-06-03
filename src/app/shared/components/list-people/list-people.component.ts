@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import { PeopleService } from '../../services/people.service';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-list-people',
@@ -8,22 +7,17 @@ import { PeopleService } from '../../services/people.service';
 })
 export class ListPeopleComponent implements OnInit{
 
-  pessoas = [
+  @Input()list = [
     {
       firstName: '',
       lastName: '',
       age: 0
     },
-  ];
+  ]
 
-  constructor(private peopleService: PeopleService){ }
+  constructor(){ }
+  
   ngOnInit(): void {
-  }
-
-  getPeople(){
-    this.peopleService.getPeople().subscribe(people =>{
-      this.pessoas = people;
-    })
   }
 
 }

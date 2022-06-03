@@ -1,13 +1,6 @@
 <ul class="list-group my-3 mx-auto col-3">
-    <li class="list-group-item" *ngFor="let pessoa of pessoas">
-      O nome da pessoa é {{ pessoa.firstName }} {{ pessoa.lastName }} e ela tem {{pessoa.age}}
+    <li class="list-group-item" *ngFor="let l of list">
+      O nome da pessoa é {{ l.firstName }} {{ l.lastName }} e ela tem {{l.age}}
     </li>
   </ul>
   
-  <ul class="list-group mx-auto my-3 col-3">
-    <ng-template ngFor let-pessoa [ngForOf]="pessoas" >
-      <li class="list-group-item">
-        O nome da pessoa é {{ pessoa.firstName }} {{ pessoa.lastName}} e ela tem a Idade {{ pessoa.age }}.
-      </li>
-    </ng-template>
-  </ul>

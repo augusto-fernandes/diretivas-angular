@@ -9,9 +9,9 @@ export class PeopleService {
 
   getPeople(): Observable<any>{
     let peopleArray = [
-      {firstNmae: 'Augusto', lastName: 'Fernandes', age: '20'},
-      {firstNmae: 'Joao', lastName: 'Costa', age: '28'},
-      { firstNmae: 'Fernando', lastName: 'Silva', age: '33'},
+      {firstName: 'Augusto', lastName: 'Fernandes', age: '20'},
+      {firstName: 'Joao', lastName: 'Costa', age: '28'},
+      { firstName: 'Fernando', lastName: 'Silva', age: '33'},
     ]
 
     return of(peopleArray);

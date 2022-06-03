@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void { 
-      this.getPeople
+      this.getPeople()
       let interval = setInterval(() =>{
       this.count++; 
       if(this.count === 10){
