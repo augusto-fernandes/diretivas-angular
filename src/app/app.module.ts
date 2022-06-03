@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MarcaTextoDirective } from './directives/marca-texto.directive';
+import { PeopleService } from './shared/services/people.services';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { MarcaTextoDirective } from './directives/marca-texto.directive';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [PeopleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
