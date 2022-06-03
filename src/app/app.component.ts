@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PeopleService } from './shared/services/people.services';
+import { PeopleService } from './shared/services/people.service';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +12,8 @@ export class AppComponent implements OnInit{
   text= '';
 
   pessoas =[
-    { firstName:'', lastName: '', age: 0}
-  ]
+    { firstName:'', lastName: '', age: 0},
+  ];
   
   constructor(private peopleService: PeopleService){ 
 
